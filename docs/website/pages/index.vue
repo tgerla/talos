@@ -21,19 +21,7 @@
           </p>
 
           <div class="py-4 flex">
-            <p class="flex-1 text-sm text-gray-600 mr-2">
-              It takes about 3 minutes to launch a small Talos cluster on your
-              laptop inside Docker.
-            </p>
-            <div class="flex-1 text-center pb-4 m-0">
-              <a
-                href="https://www.talos.dev/docs/v0.3/#v0.3/en/guides/getting-started"
-              >
-                <button class="teal-cta-button">
-                  Try it now
-                </button></a
-              >
-            </div>
+            <div class="flex-1 text-center pb-4 m-0"></div>
           </div>
         </div>
         <div class="w-2/3 lg:w-1/2 lg:pl-8">
@@ -44,6 +32,8 @@
         </div>
       </div>
     </div>
+
+    <InstallHero />
 
     <div class="w-3/4 mx-auto">
       <div class="justify-center">
@@ -211,11 +201,13 @@
 
 <script>
 import Terminal from '~/components/Terminal.vue'
+import InstallHero from '~/components/InstallHero.vue'
 
 export default {
   name: 'Index',
   components: {
-    Terminal
+    Terminal,
+    InstallHero
   }
 }
 </script>
